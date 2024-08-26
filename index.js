@@ -10,7 +10,7 @@ const port = 4000;
 
 async function example() {
   let chromeOptions = new chrome.Options();
-  // chromeOptions.addArguments('--headless');
+  chromeOptions.addArguments('--headless');
   chromeOptions.addArguments('--no-sandbox');
   chromeOptions.addArguments('--disable-popup-blocking'); // To avoid any popup issues
   chromeOptions.addArguments('--disable-dev-shm-usage');
