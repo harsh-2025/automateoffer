@@ -1,0 +1,19 @@
+{
+   
+    "offerdetails":{
+      "offername":"oferdd",
+      "offerdisplay":"43 421 test",
+      "offerterms":[
+        "finalterm"," 8term"
+      ],
+      "offertype":"instant",
+      "startdate":"August 23, 2024"
+
+    },
+    "discount":{
+      "type":"flat",
+      "mov":352532,
+      "discountworth":1000
+    }
+  }
+  
