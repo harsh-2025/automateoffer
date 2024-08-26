@@ -10,6 +10,7 @@ const port = 4000;
 async function example() {
   const config = JSON.parse(fs.readFileSync('data.json', 'utf8'));
   let chromeOptions = new chrome.Options();
+  chromeOptions.addArguments("--headless");
   chromeOptions.addArguments('--disable-popup-blocking'); // To avoid any popup issues
 
   let driver = await new Builder()
