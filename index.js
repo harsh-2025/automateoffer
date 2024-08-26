@@ -69,6 +69,8 @@ async function example() {
 };
 
 app.get('/start-automation', async (req, res) => {
+      res.send('started the automation');
+
   console.log('started')
   await example();
   console.log('res end')
