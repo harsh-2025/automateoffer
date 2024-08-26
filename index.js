@@ -52,7 +52,7 @@ async function example() {
 }
 
 app.get('/start-automation', async (req, res) => {
-  res.send('running fine');
+  // res.send('running fine');
   console.log('Automation started');
   
   try {
