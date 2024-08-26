@@ -52,6 +52,7 @@ async function example() {
 }
 
 app.get('/start-automation', async (req, res) => {
+  res.send('running fine');
   console.log('Automation started');
   
   try {
@@ -60,7 +61,7 @@ app.get('/start-automation', async (req, res) => {
     res.send(`Automation completed! Text obtained: ${text}`);
   } catch (error) {
     console.error('Error during automation:', error);
-    res.status(500).send('An error occurred during automation.');
+    res.status(500).send(`An error occurred during automation: ${error.message}`);
   }
 });
 
